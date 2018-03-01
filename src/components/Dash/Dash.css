@@ -1,0 +1,175 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    float: center;
+    background-color: #519872;
+}
+
+.left-color2 {
+    float: left;
+    height: 90vh;
+    width: 20%;
+    background-color: #AFD4C0;
+}
+
+.right-color2 {
+    float: right;
+    height: 90vh;
+    width: 20%;
+    background-color: #AFD4C0;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: calc(45px);
+    height: 40px;
+    margin-left: 21%;
+    margin-top: 2%;
+}
+
+.h1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.6%;
+    margin-left: 1%;
+    color: white;
+    font-size: 310%;
+    font-weight: bolder;
+}
+
+.h2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-top: 2.1%;
+    color: white;
+    font-weight: 200;
+    font-size: 250%;
+}
+
+.h3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 950%;
+    margin-top: 80%;
+    color: white;
+}
+
+.new-prop-btn {
+    margin-left: 23%;
+    margin-top: 1%;
+    background-color: #8AEA92;
+    font-size: 18px;
+    width: 12%;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.filter-line{
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-text {
+    margin-left: 13%;
+    margin-top: 4%;
+    font-weight: 500;
+}
+
+.inpt-filter {
+    margin-left: .5%;
+    margin-top: 3.8%;
+    height: 30px;
+    width: 7%;
+    border-color: #8AEA92;
+    font-size: 18px;
+}
+
+.filter-btn {
+    margin-left: 2%;
+    margin-top: 3.5%;
+    height: 39px;
+    width: 7%;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #8AEA92;
+}
+
+.reset-btn {
+    margin-left: .5%;
+    margin-top: 3.5%;
+    height: 39px;
+    width: 7%;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #3B5249;
+    color: white;
+}
+
+.border {
+    border-bottom: 2px solid black;
+    width: 58%;
+    margin-left: 21%;
+    margin-top: 3%;
+}
+
+.home-text {
+    margin-left: 3%;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.homes-img{
+    height: 100%;
+    width: 200px;
+    max-width: 150px;
+    background: black;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.homes-message{
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    padding: 10px;
+  }
+
+
+.messag-prop-name{
+    font-weight: 700;
+  }
+
+
+.message{
+    font-weight: 400;
+    margin-top: 10px; 
+  }
+
+
+.homes-info{
+    width: 50%;
+    padding-right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    border-left: 1px solid #000;
+    padding-left: 10px;
+  }
+
+  .info-span{
+    font-weight: 700;
+    padding: 2px;
+  }

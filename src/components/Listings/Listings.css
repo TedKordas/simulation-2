@@ -1,0 +1,36 @@
+.listingContainer {
+    margin-top: 50px;
+    height: 150px;
+    width: 850px;
+    box-sizing: border-box;
+    background-color: #DEDEDE;
+    display: flex;
+    flex-direction: row;
+    
+}
+.imgContainer{
+    height: 150px;
+    width: 150px;
+    background-color: #F7F7F7
+    
+}
+.nameDescriptionContainer{
+    height: 130px;
+    width: 257px;
+    
+}
+.detailsContainer{
+    margin-left: 130px;
+    height: 150px;
+    width: 280px;
+    border-left: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.detail{
+    height: 22px;
+    width: auto;
+    margin-left: 20px;
+}
