@@ -18,7 +18,7 @@ class Wiz5 extends Component {
             properties: [],
             name: ' ',
             description: ' ',
-            imgUrl: ' ',
+            imageUrl: ' ',
             address: ' ',
             city: ' ',
             states: ' ',
@@ -26,7 +26,7 @@ class Wiz5 extends Component {
             loanAmount: ' ',
             monthlyMortgage: ' ',
             desiredRent: ' ',
-            recomended: 0,
+            recomended: ' ',
         }
         this.handleComplete = this.handleComplete.bind(this);
     }
@@ -54,7 +54,7 @@ class Wiz5 extends Component {
             city: this.props.city,
             states: this.props.states,
             zip: this.props.zip,
-            img_url: this.props.imgUrl,
+            img_url: this.props.imageUrl,
             loan_amount: this.props.loanAmount,
             monthly_mortgage: this.props.monthlyMortgage,
             desired_rent: this.props.desiredRent
@@ -63,6 +63,7 @@ class Wiz5 extends Component {
         .then(res => {
             console.log('returning house');
             this.props.addListings(res.data);
+            return res.properties
         })
         .catch(err => console.log(err)); 
     }
@@ -110,7 +111,7 @@ class Wiz5 extends Component {
 }
 
 function mapStatetoProps(state) {
-    const {recomended, name, description, address, city, states, zip, imgUrl, loanAmount, monthlyMortgage, desiredRent} = state;
+    const {recomended, name, description, address, city, states, zip, imageUrl, loanAmount, monthlyMortgage, desiredRent} = state;
     return {
         recomended, 
         name, 
@@ -119,7 +120,7 @@ function mapStatetoProps(state) {
         city, 
         states, 
         zip, 
-        imgUrl, 
+        imageUrl, 
         loanAmount, 
         monthlyMortgage, 
         desiredRent

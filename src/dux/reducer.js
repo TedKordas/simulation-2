@@ -16,7 +16,7 @@ let initialState = {
     loanAmount: " ",
     monthlyMortgage: " ",
     desiredRent: " ",
-    recomended: 0,
+    recomended: " ",
 };
 
 const UPDATE_USERNAME = "UPDATE_USERNAME";

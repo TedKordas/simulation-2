@@ -6,7 +6,7 @@ class Listings extends Component {
         return(
             <div className="listingContainer">
                 <div className="imgContainer">
-                    <img src={`${this.props.imageUrl}`} alt="" />
+                    <img className="imgContainer" src={`${this.props.imageUrl}`} alt="" />
                 </div>
                 <div className="nameDescriptionContainer">
                     <div>{`${this.props.name}`}</div>
