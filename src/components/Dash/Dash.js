@@ -49,18 +49,18 @@ class Dash extends Component {
     }
 
     render() {
-      var propertiesList = this.props.properties.map((property, i) => {
+      var propertiesList = this.props.properties.map((properties, i) => {
         return <Listings key={i} 
-        imageUrl={property.img_url}
-        name={property.name}
-        description={property.description}
-        loanAmount={property.loan_amount}
-        monthlyMortgage={property.monthly_mortgage}
-        desiredRent={property.desired_rent}
-        address={property.address}
-        city={property.city}
-        states={property.state}
-        zip={property.zip}
+        imageUrl={properties.img_url}
+        name={properties.name}
+        description={properties.description}
+        loanAmount={properties.loan_amount}
+        monthlyMortgage={properties.monthly_mortgage}
+        desiredRent={properties.desired_rent}
+        address={properties.address}
+        city={properties.city}
+        states={properties.state}
+        zip={properties.zip}
         />;
       })
         return(

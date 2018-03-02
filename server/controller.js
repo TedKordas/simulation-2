@@ -4,8 +4,8 @@ module.exports = {
         const { username, password } = req.body;
 
         db.createUser([username, password])
-        .then( data => {
-            const user = data[0];
+        .then( userData => {
+            const user = userData[0];
 
             req.session.user = {
                 id: user.userid,
@@ -27,9 +27,9 @@ module.exports = {
         const { username, password } = req.body;
 
         db.getUsers([username, password])
-        .then( data => {
-            if ( data.length !== 0 ) {
-                const user = data[0];
+        .then( userData => {
+            if ( userData.length !== 0 ) {
+                const user = userData[0];
 
                 req.session.user = {
                     id: user.userid,
@@ -38,7 +38,7 @@ module.exports = {
 
                 res.status(200).send(req.session.user);
             } else {
-                res.status(500).send(err);
+                res.status(401).send('Please login');
             }
         })
         .catch( err => res.status(500).send(err));
